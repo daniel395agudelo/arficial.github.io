@@ -1,27 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Ejemplo de HTML y CSS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
   <style>
+    /* Estilos CSS */
+    /* body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
     h1 {
-      color: blue;
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 18px;
-    }
+      font-size: 16px;
+      line-height: 1.5;
+    } */
 
-    .caja {
-      background-color: yellow;
-      padding: 10px;
-    }
+    /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Estilos para secciones */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  color: #007bff;
+}
+
+section ul li:before {
+  content: "\2022";
+  color: #007bff;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Estilos para enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para encabezado */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #777;
+  font-size: 18px;
+}
+
+/* Estilos para información personal */
+#info ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+/* Estilos para habilidades */
+#skills ul {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+/* Estilos para experiencia laboral */
+#experience h3 {
+  color: #007bff;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Estilos para proyectos destacados */
+#projects h3 {
+  color: #007bff;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#unica {
+
+    border-radius: 20%;
+    width: 35%;
+    height: 35% ;
+}
   </style>
 </head>
 <body>
-  <h1>Ejemplo de HTML y CSS</h1>
-  <p>Este es un ejemplo básico de cómo combinar HTML y CSS.</p>
-  <div class="caja">
-    <p>Este es un párrafo dentro de una caja.</p>
-  </div>
+  <!-- Sección de presentación -->
+  <header>
+    <h1>Daniel Estiven Agudelo Rodriguez</h1>
+    <p>Desarrollador Web</p>
+    <img  id="unica"  src="https://media.istockphoto.com/id/1482531830/es/foto/concepto-de-creatividad-en-diversos-eventos-empresario-sosteniendo-bombilla-idea-e-imaginaci%C3%B3n.jpg?s=612x612&w=0&k=20&c=O7asFHCyEshrsbiiZoj8SIpI8K2B_WNxcxysZE3IvJE=" alt="">
+  </header>
+
+  <!-- Sección de información personal -->
+  <section>
+    <h2>Información Personal</h2>
+    <ul>
+      <li><strong>Nombre:</strong> Daniel Estiven Agudelo Rodriguez </li>
+      <li><strong>Ubicación:</strong> Medellin, Colombia</li>
+      <li><strong>Email:</strong> daniel.agudelo@corautosandino.com </li>
+      <li><strong>Teléfono:</strong> 3160232124 </li>
+    </ul>
+  </section>
+
+  <!-- Sección de habilidades -->
+  <section>
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Analisis de Datos</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>MySQL</li>
+      <li>SQL</li>
+      <li>Git-Github</li>
+      <li>Microsoft 365</li>
+      <li>Excel</li>
+      <li>Matematicas Fundamentos</li>
+      <li>Creacion e implementacion de paginas con Inteligencia Arficial</li>
+    </ul>
+  </section>
+
+  <!-- Sección de experiencia laboral -->
+  <section>
+    <h2>Experiencia Laboral</h2>
+    <h3>Empresa ABC - Desarrollador Web (2019 - Presente)</h3>
+    <p>
+      Descripción de tus responsabilidades y logros en la empresa ABC.
+    </p>
+
+    <h3>Empresa XYZ - Desarrollador Web (2017 - 2019)</h3>
+    <p>
+      Descripción de tus responsabilidades y logros en la empresa XYZ.
+    </p>
+  </section>
+
+  <!-- Sección de proyectos destacados -->
+  <section>
+    <h2>Proyectos Destacados</h2>
+    <h3>Proyecto 1</h3>
+    <p>
+      Descripción del proyecto 1 y tu rol en él.
+    </p>
+
+    <h3>Proyecto 2</h3>
+    <p>
+      Descripción del proyecto 2 y tu rol en él.
+    </p>
+  </section>
+
+  <!-- Sección de educación -->
+  <section>
+    <h2>Educación</h2>
+    <h3>Tecnólogo en Análisis y Desarrollo de Sistemas de Información (2022)</h3>
+    <p>Servicio Nacional de Aprendizaje SENA</p>
+  </section>
+
+  <!-- Sección de certificaciones -->
+  <section>
+    <h2>Certificaciones</h2>
+    <ul>
+      <li>Aprendizaje en linea para cumplir objetivos profesionales</li>
+      <li>diploma-excel-basico</li>
+      <li>diploma-excel-intermedio</li>
+      <li>diploma-notion</li>
+      <li>diploma-portafolios</li>
+    </ul>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section>
+    <h2>Contacto</h2>
+    <p>¡No dudes en contactarme! Estoy disponible para discutir oportunidades y responder cualquier pregunta que puedas tener.</p>
+    <ul>
+      <li>Email: daniel.agudelo@corautosandino.com</li>
+      <li>Teléfono: 316-023-2124</li>
+      <li>Sitio web: https://daniel395agudelo.github.io/arficial.github.io/</li>
+    </ul>
+  </section>
 </body>
 </html>
